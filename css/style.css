@@ -1,0 +1,42 @@
+:root{
+    --dark_blue:#2c3e50;
+    --green:#1abc9c;
+    --light_blue:#3a546d;
+}
+
+
+.main-header{
+    background-color: var(--light_blue);
+}
+
+.header-title h2{
+    color: white;
+    font-size: 2em;
+}
+
+
+.menu-description{
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hero-logo{
+    height: 50px;
+}
+
+
+/* DEBUG */
+
+[class^='col']{
+    border: 1px solid red;
+}
+.container{
+    border: 1px solid yellow;
+
+}
+
+
+
