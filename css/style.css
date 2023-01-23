@@ -21,7 +21,7 @@ a {
 /* DEBUG */
 
 main [class*='col']:not(.row)::before,
-footer [class*='col']:not(.row)::before {
+footer [class*='col']:not(.row)::before{
 	content: 'content';
 	display: block;
 	border: 2px solid currentColor;
@@ -29,15 +29,20 @@ footer [class*='col']:not(.row)::before {
 	padding: 30px;
 }
 
-/* main [class*='col'] {
-	border: 1px solid currentColor;
-	min-height: 100px;
-} */
-
 .page-footer {
 	background-color: var(--blue);
 }
 
 .footer-copy {
 	background-color: var(--dark-blue);
+}
+
+.hero-logo{
+    width: 260px;
+}
+.hero-star::before{
+    background-color: white;
+    height: 4px;
+    width: 20%;
+    display: flex;
 }
