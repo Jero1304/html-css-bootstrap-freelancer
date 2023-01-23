@@ -37,12 +37,30 @@ a {
     color: var(--dark-blue);
 }
 
-/* .star::before{
+.star::before,
+.star::after{
+    content: '';
     background-color: white;
     height: 4px;
     width: 20%;
+}
+
+.star-dark::before,
+.star-dark::after{
+    content: '';
+    background-color: var(--dark-blue);
+    height: 4px;
+    width: 20%;
+
+}
+.star, .star-dark{
     display: flex;
-} */
+    justify-content: center;
+    align-items: center;
+}
+.star>i{
+    padding: 0 20px 0 20px;
+}
 
 .port-icon img{
     width: 100%;
