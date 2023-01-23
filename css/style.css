@@ -20,7 +20,6 @@ a {
 
 /* DEBUG */
 
-main [class*='col']:not(.row)::before,
 footer [class*='col']:not(.row)::before{
 	content: 'content';
 	display: block;
@@ -45,15 +44,31 @@ footer [class*='col']:not(.row)::before{
     color: var(--dark-blue);
 }
 
-.star::before{
+/* .star::before{
     background-color: white;
     height: 4px;
     width: 20%;
     display: flex;
-}
+} */
 
 .port-icon img{
     width: 100%;
     border-radius: 20px;
 }
 
+.send-button-bg{
+    background-color: var(--green);
+}
+
+.form-section textarea{
+    height: 200px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    border-radius: 0;
+}
+
+.form-section input{
+    border: none;
+    border-bottom: 2px solid lightgray;
+    border-radius: 0;
+}
