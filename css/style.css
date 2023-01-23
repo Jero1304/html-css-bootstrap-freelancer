@@ -20,13 +20,6 @@ a {
 
 /* DEBUG */
 
-footer [class*='col']:not(.row)::before{
-	content: 'content';
-	display: block;
-	border: 2px solid currentColor;
-	border-radius: 5px;
-	padding: 30px;
-}
 
 .page-footer {
 	background-color: var(--blue);
@@ -71,4 +64,14 @@ footer [class*='col']:not(.row)::before{
     border: none;
     border-bottom: 2px solid lightgray;
     border-radius: 0;
+}
+
+.info-social-icon i {
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.info-description > .info-start{
+    color: var(--green);
 }
