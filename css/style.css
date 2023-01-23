@@ -1,60 +1,43 @@
-:root{
-    --dark_blue:#2c3e50;
-    --green:#1abc9c;
-    --light_blue:#3a546d;
-}
-img{
-    max-width: 100%;
+:root {
+	--green: #1abc9c;
+	--blue: #3a546d;
+	--dark-blue: #2c3e50;
 }
 
-/* HEADER */
-.main-header{
-    background-color: var(--light_blue);
+.main-header {
+	background-color: var(--dark-blue);
 }
 
-.header-title h2{
-    color: white;
-    font-size: 2em;
-}
-.menu-description{
-    color: white;
-    font-size: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+a {
+	color: currentColor;
+	text-decoration: none;
 }
 
-/* HERO */
-.hero-bg{
-    background-color: var(--green);
+.hero,
+.about {
+	background-color: var(--green);
 }
-.hero-description > .hero-title{
-    font-size: 50px;
-}
-
-.hero-description > .hero-subtitle{
-    font-size: 1.3em;
-}
-
-.hero-description{
-    padding-bottom:70px ;
-    gap: 1.5em;
-    display: flex;
-    flex-direction: column;
-}
-
-
-
 
 /* DEBUG */
 
-[class^='col']{
-    border: 1px solid red;
+main [class*='col']:not(.row)::before,
+footer [class*='col']:not(.row)::before {
+	content: 'content';
+	display: block;
+	border: 2px solid currentColor;
+	border-radius: 5px;
+	padding: 30px;
 }
-.container{
-    border: 1px solid yellow;
 
+/* main [class*='col'] {
+	border: 1px solid currentColor;
+	min-height: 100px;
+} */
+
+.page-footer {
+	background-color: var(--blue);
 }
 
-
-
+.footer-copy {
+	background-color: var(--dark-blue);
+}
